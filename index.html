@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Photo Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Photo Gallery</h1>
+        <p>Explore Beautiful Moments</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Nature</a>
+        <a href="#">Travel</a>
+        <a href="#">About</a>
+    </nav>
+
+    <!-- Category Filters -->
+    <div class="filter-buttons">
+
+        <button class="active" data-filter="all">All</button>
+
+        <button data-filter="nature">Nature</button>
+
+        <button data-filter="mountain">Mountains</button>
+
+        <button data-filter="travel">Travel</button>
+
+    </div>
+
+    <!-- Gallery -->
+    <main>
+
+        <section class="gallery">
+
+            <div class="photo" data-category="nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7CBJorho6YGePkRtqPY5gj9l2RwFyfdqGTNlddvpwwLiN5b6RyrkbjMJo&s=10" alt="Nature">
+                <h3>Beautiful Nature</h3>
+            </div>
+
+            <div class="photo" data-category="mountain">
+                <img src="https://m.media-amazon.com/images/I/71K4EWjvoPL.jpg" alt="Mountain">
+                <h3>Mountain View</h3>
+            </div>
+
+            <div class="photo" data-category="nature">
+                <img src="https://img.magnific.com/free-photo/waterfall-chae-son-national-park-lampang-thailand_554837-639.jpg?semt=ais_hybrid&w=740&q=80" alt="Lake">
+                <h3>Peaceful Lake</h3>
+            </div>
+
+            <div class="photo" data-category="nature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVdVHUBlix6kNBk5t9I2kylD6OM8Y8obHeySv9mSA03hxUsCpf6fYF38W&s=10" alt="Forest">
+                <h3>Beautiful Nature</h3>
+            </div>
+
+            <div class="photo" data-category="travel">
+                <img src="https://img.magnific.com/free-photo/wooden-bridge-koh-nangyuan-island-surat-thani-thailand_335224-1082.jpg?semt=ais_hybrid&w=740&q=80" alt="Beach">
+                <h3>Beautiful Beach</h3>
+            </div>
+
+            <div class="photo" data-category="nature">
+                <img src="https://thumbs.dreamstime.com/b/woman-traveler-hiking-norway-travel-solo-active-vacations-girl-tourist-enjoying-aerial-lake-view-woman-traveler-hiking-472257319.jpg" alt="Sky">
+                <h3>Dreamstime</h3>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button id="prev">❮</button>
+
+        <img id="lightbox-img" src="" alt="Preview">
+
+        <button id="next">❯</button>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Photo Gallery</p>
+    </footer>
+
+    <script src="gall.js"></script>
+
+</body>
+</html>
